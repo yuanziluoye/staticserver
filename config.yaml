@@ -1,0 +1,16 @@
+logger:
+    Daily: true
+    MaxDays: 120
+    Rotate: true
+    RotatePerm: '0440'
+    Level: 7
+    Perm: '0660'
+    LogPath: log/app.log
+
+listenPort: 9091
+templateDir: 'view/'
+staticDir: 'static/'
+uploadDir: './upload/'
+fileExtType: ['.dat', '.xml']
+user: 'root'
+password: $2a$12$Ss4dyXlKcBbxFPoyiN58jeACAoV5YpOO32x/e7XYKZB6/MzB/MwwG

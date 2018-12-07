@@ -1,14 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<link href="./css/css.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>{{.Title}}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit"/>
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="/static/css/spectre.min.css">
+    <link rel="stylesheet" href="/static/css/spectre-exp.min.css">
+    <link rel="stylesheet" href="/static/css/spectre-icons.min.css">
 </head>
 <body>
-	<div>
-		<a href="/upload">上传文件</a></p>
-		<a href="/file">查看文件</a></p>
-	</div>
+<div class="container">
+    <div class="columns">
+        <div class="column col-5"></div>
+        <div class="column col-2">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-6">
+                        <a class="btn btn-primary" href="/upload">上传文件</a></p>
+                    </div>
+                    <div class="col-6">
+                        <a class="btn btn-success" href="/file">查看文件</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column col-5"></div>
+    </div>
+</div>
 </body>
 </html>

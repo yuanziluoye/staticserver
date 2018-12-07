@@ -1,11 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>{{.}}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit"/>
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="/static/css/spectre.min.css">
+    <link rel="stylesheet" href="/static/css/spectre-exp.min.css">
+    <link rel="stylesheet" href="/static/css/spectre-icons.min.css">
 </head>
 <body>
-<form enctype="multipart/form-data" action="http://127.0.0.1:9090/upload" method="post">
-  <input type="file" name="uploadfile" />
-  <input type="submit" value="upload" />
-</form>
+<div class="container">
+    <div class="columns">
+        <div class="column col-4"></div>
+        <div class="column col-4">
+            <form class="form-horizontal" enctype="multipart/form-data" action="/upload" method="post">
+                <div class="form-group">
+                    <div class="col-3">
+                        <label class="form-label" for="input-label">选择文件</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="file" name="uploadfile"/>
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label" for="input-label">操作</label>
+                    </div>
+                    <div class="col-9">
+                        <input class="btn btn-primary" type="submit" value="开始上传"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="column col-4"></div>
+    </div>
+</div>
 </body>
 </html>
