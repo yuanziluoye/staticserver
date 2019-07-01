@@ -1,23 +1,23 @@
 package main
 
 import (
+	"crypto/subtle"
 	"fmt"
 	"html/template"
 	"io"
+	"io/ioutil"
 	"net/http"
 	"os"
-	"path/filepath"
-	"io/ioutil"
 	"os/exec"
+	"path/filepath"
 	"strings"
 	"time"
-	"crypto/subtle"
 
 	"github.com/astaxie/beego/logs"
-	"gopkg.in/yaml.v2"
 	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"
 	"golang.org/x/crypto/bcrypt"
+	"gopkg.in/yaml.v2"
 )
 
 type home struct {
